@@ -1,20 +1,19 @@
 # AF-Caixa-Branca
 
-Perguntas: 
 O código foi devidamente documentado?
-R: Não, o código praticamente não tem comentários explicativos, apenas uma linha comentada indicando onde está a instrução SQL, e na minha opinião um código bem documentado precisa de comentários.
+R: Não. Ele quase não tem comentários e, para ser bem documentado, precisaria explicar melhor a lógica e cada etapa.
 
-As variáveis e constantes possuem nomenclatura?
-R: Sim, mas não completamente. Digo isso, pois o código tem nomes que dão para entender, mas não são as melhores opções, por exemplo:
-nome e result têm nomes aceitáveis, porém poderiam ser mais claros (ex: usuarioNome, loginValido). Sinto que tudo está hardcoded.
+As variáveis e constantes possuem nomenclatura adequada?
+R: Parcialmente. Os nomes são compreensíveis, mas poderiam ser mais claros e descritivos. Alguns pontos parecem hardcoded.
 
-Existem legibilidade e organização no código?
-R: Acredito que sim, porque o código é curto e de fácil leitura.
+Existe legibilidade e organização no código?
+R: Não muito. O código é curto, mas mistura lógica, conexão e validação de forma confusa, e a identação poderia ser mais padronizada.
 
 Todos os NullPointers foram tratados?
+R: Não. O método conectarBD() pode retornar null e isso abre margem para NullPointerException.
 
 As conexões utilizadas foram fechadas?
-
+R: Não. Connection, Statement e ResultSet não são fechados após o uso.
 
 _________________________________________________________________________________________________________________________________
 
